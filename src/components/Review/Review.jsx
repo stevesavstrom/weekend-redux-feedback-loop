@@ -1,9 +1,10 @@
 import "./Review.css";
 import { useSelector } from "react-redux";
 import axios from "axios";
-import { HashRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Link, useHistory } from "react-router-dom";
 
 function Review() {
+  const history = useHistory();
   const feelingData = useSelector((store) => store.feelingData);
   const understandingData = useSelector((store) => store.understandingData);
   const supportData = useSelector((store) => store.supportData);
@@ -23,10 +24,13 @@ function Review() {
       .post("/feedback", feedbackPost)
       .then((response) => {
         console.log(response);
+        history.push("/thankyou");
       })
       .catch((err) => {
         console.log("this is a Post error on Review.jsx", err);
       });
+
+      
   };
   return (
     <>

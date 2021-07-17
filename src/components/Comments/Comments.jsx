@@ -17,13 +17,6 @@ function Comments() {
   const [supportInput, setSupportInput] = useState('');
   const [commentsInput, setCommentsInput] = useState('');
 
-//   const feedbackFormData = {
-// 	feeling: feelingInput,
-// 	understanding: understandingInput,
-// 	support: supportInput,
-// 	comments: commentsInput
-//   };
-
   const handleSubmit = () => {
     event.preventDefault();
 
