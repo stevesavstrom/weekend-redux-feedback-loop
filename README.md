@@ -12,6 +12,11 @@
 - [x] setup feedback.router.js with GET and POST express routes
 - [x] setup server.js with express routes and router const
 - [x] setup Review component form and axios POST
+- [x] setup ThankYou component
+- [x] add client-side routing to App.jsx and all components
+- [] customize text for each component
+- [] style header/overall look/colors
+- [] style components with material-ui (inputs, buttons, etc.)
 - [] Setup App.jsx framework (add details)
 - [] Setup index.js framework (add details)
 - [] Setup Express routes - need GET and POST
