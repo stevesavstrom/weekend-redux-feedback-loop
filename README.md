@@ -4,6 +4,7 @@
 - [x] npm run client
 - [x] npm install redux react-redux
 - [x] npm install redux-logger
+- [x] npm install react-router-dom
 - [x] setup database 'prime_feedback'
 - [x] CREATE TABLE "feedback" in database
 - [x] INSERT INTO feedback - placeholder data
