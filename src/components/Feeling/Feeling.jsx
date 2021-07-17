@@ -11,13 +11,6 @@ import {
 } from "react-router-dom";
 import "./Feeling.css";
 
-const feedbackFormData = {
-  feelingInput,
-  understandingInput,
-  supportInput,
-  commentsInput,
-};
-
 function Feeling() {
   const history = useHistory();
   const dispatch = useDispatch();
@@ -25,6 +18,13 @@ function Feeling() {
   const [understandingInput, setUnderstandingInput] = useState(0);
   const [supportInput, setSupportInput] = useState(0);
   const [commentsInput, setCommentsInput] = useState("");
+
+  const feedbackFormData = {
+	feelingInput,
+	understandingInput,
+	supportInput,
+	commentsInput
+  };
 
   const handleSubmit = () => {
     event.preventDefault();
