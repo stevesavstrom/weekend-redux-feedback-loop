@@ -15,31 +15,28 @@ function Feeling() {
   const history = useHistory();
   const dispatch = useDispatch();
   const [feelingInput, setFeelingInput] = useState('');
-  const [understandingInput, setUnderstandingInput] = useState('');
-  const [supportInput, setSupportInput] = useState('');
-  const [commentsInput, setCommentsInput] = useState('');
 
-  const feedbackFormData = {
-	feeling: feelingInput,
-	understanding: understandingInput,
-	support: supportInput,
-	comments: commentsInput
-  };
+//   const feedbackFormData = {
+// 	feeling: feelingInput,
+// 	understanding: understandingInput,
+// 	support: supportInput,
+// 	comments: commentsInput
+//   };
 
   const handleSubmit = () => {
     event.preventDefault();
 
     dispatch({
-      type: "FEEDBACK_DATA",
-      payload: feedbackFormData,
+      type: "FEELING_DATA",
+      payload: feelingInput
     });
     history.push("/understanding");
   };
 
   return (
     <section>
-      <h2>Add Feedback</h2>
-      <form onSubmit={handleSubmit} className="add-book-form">
+      <h2>How are you feeling today?</h2>
+      <form onSubmit={handleSubmit} className="add-feeling-form">
 	
         <input
           required
@@ -47,27 +44,6 @@ function Feeling() {
           value={feelingInput}
           onChange={(event) => setFeelingInput(event.target.value)}
         />
-
-        {/* <input
-          required
-          placeholder="Understanding"
-          value={understandingInput}
-          onChange={(event) => setUnderstandingInput(event.target.value)}
-        />
-
-        <input
-          required
-          placeholder="Support"
-          value={supportInput}
-          onChange={(event) => setSupportInput(event.target.value)}
-        />
-
-        <input
-          required
-          placeholder="Comments"
-          value={commentsInput}
-          onChange={(event) => setCommentsInput(event.target.value)}
-        /> */}
 
         <button type="submit">Next</button>
       </form>
