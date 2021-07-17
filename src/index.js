@@ -9,9 +9,6 @@ import { Provider } from "react-redux";
 import logger from "redux-logger";
 
 
-
-
-
 const feedbackData = (state = [], action) => {
 	if (action.type === 'FEEDBACK_DATA') {
 	  return action.payload;

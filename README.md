@@ -11,6 +11,7 @@
 - [x] setup component folders and files for feeling, understanding, support, comments, review, and admin.
 - [x] setup feedback.router.js with GET and POST express routes
 - [x] setup server.js with express routes and router const
+- [x] setup Review component form and axios POST
 - [] Setup App.jsx framework (add details)
 - [] Setup index.js framework (add details)
 - [] Setup Express routes - need GET and POST

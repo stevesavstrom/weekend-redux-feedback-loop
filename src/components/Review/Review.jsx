@@ -7,23 +7,20 @@ function Review() {
   const feedbackData = useSelector((store) => store.feedbackData);
 
 const handleSubmit = () => {
+	console.log(feedbackData);
   event.preventDefault();
 
-  axios({
-    method: "POST",
-    url: "/feedback",
-    data: {
-      feeling: feedbackData.feelingInput,
-      understanding: feedbackData.understandingInput,
-      support: feedbackData.supportInput,
-      comments: feedbackData.commentsInput,
-    },
+  axios.post('/feedback', {
+	feeling: feedbackData.feeling,
+	understanding: feedbackData.understanding,
+	support: feedbackData.support,
+	comments: feedbackData.comments,
   })
     .then((response) => {
       console.log(response);
     })
     .catch((err) => {
-      console.log("this is a Post error", err);
+      console.log("this is a Post error on Review.jsx", err);
     });
 }
   return (
@@ -39,19 +36,16 @@ const handleSubmit = () => {
             </tr>
           </thead>
           <tbody>
-            {feedbackData.map((feedback, index) => (
-              <tr key={index}>
-                <td>{feedback.feeling}</td>
-                <td>{feedback.understanding}</td>
-                <td>{feedback.support}</td>
-				<td>{feedback.comments}</td>
+              <tr>
+                <td>{feedbackData.feeling}</td>
+                <td>{feedbackData.understanding}</td>
+                <td>{feedbackData.support}</td>
+				<td>{feedbackData.comments}</td>
               </tr>
-            ))}
           </tbody>
         </table>
       </section>
 	  <section>
-        {/* don't send to db until user clicks checkout */}
           <button type="submit" value="submit" onClick={() => handleSubmit()}>
             Submit Feedback
           </button>

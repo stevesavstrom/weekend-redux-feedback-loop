@@ -14,16 +14,16 @@ import "./Feeling.css";
 function Feeling() {
   const history = useHistory();
   const dispatch = useDispatch();
-  const [feelingInput, setFeelingInput] = useState(0);
-  const [understandingInput, setUnderstandingInput] = useState(0);
-  const [supportInput, setSupportInput] = useState(0);
-  const [commentsInput, setCommentsInput] = useState("");
+  const [feelingInput, setFeelingInput] = useState('');
+  const [understandingInput, setUnderstandingInput] = useState('');
+  const [supportInput, setSupportInput] = useState('');
+  const [commentsInput, setCommentsInput] = useState('');
 
   const feedbackFormData = {
-	feelingInput,
-	understandingInput,
-	supportInput,
-	commentsInput
+	feeling: feelingInput,
+	understanding: understandingInput,
+	support: supportInput,
+	comments: commentsInput
   };
 
   const handleSubmit = () => {
@@ -38,8 +38,9 @@ function Feeling() {
 
   return (
     <section>
-      <h2>Add Book</h2>
+      <h2>Add Feedback</h2>
       <form onSubmit={handleSubmit} className="add-book-form">
+	
         <input
           required
           placeholder="Feeling"
@@ -47,7 +48,7 @@ function Feeling() {
           onChange={(event) => setFeelingInput(event.target.value)}
         />
 
-        <input
+        {/* <input
           required
           placeholder="Understanding"
           value={understandingInput}
@@ -66,9 +67,9 @@ function Feeling() {
           placeholder="Comments"
           value={commentsInput}
           onChange={(event) => setCommentsInput(event.target.value)}
-        />
+        /> */}
 
-        <button type="submit">Submit Feedback</button>
+        <button type="submit">Next</button>
       </form>
     </section>
   );
