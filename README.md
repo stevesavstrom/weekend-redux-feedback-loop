@@ -9,7 +9,7 @@
 - [] Setup index.js framework (add details)
 - [] Setup Express routes - need GET and POST
 - [] Create input form - how to break into steps?
-- [] Create list to populate on DOM
+- [] Create list to populate on DOMgit 
 
 # Project Name
 
