@@ -5,6 +5,7 @@
 - [x] setup database 'prime_feedback'
 - [x] CREATE TABLE "feedback" in database
 - [x] INSERT INTO feedback - placeholder data
+- [x] setup component folders and files for feeling, understanding, support and comments.
 - [] Setup App.jsx framework (add details)
 - [] Setup index.js framework (add details)
 - [] Setup Express routes - need GET and POST
