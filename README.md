@@ -5,7 +5,7 @@
 - [x] setup database 'prime_feedback'
 - [x] CREATE TABLE "feedback" in database
 - [x] INSERT INTO feedback - placeholder data
-- [x] setup component folders and files for feeling, understanding, support and comments.
+- [x] setup component folders and files for feeling, understanding, support, comments, and review.
 - [x] setup feedback.router.js with GET and POST express routes
 - [x] setup server.js with express routes and router const
 - [] Setup App.jsx framework (add details)
@@ -13,6 +13,10 @@
 - [] Setup Express routes - need GET and POST
 - [] Create input form - how to break into steps?
 - [] Create list to populate on DOMgit 
+
+## Notes
+- POST axios should be on review component - that is where user submits and POSTS to database (could also be on App.jsx).
+- GET axios should be on Admin component (could also be on App.jsx).
 
 # Project Name
 
