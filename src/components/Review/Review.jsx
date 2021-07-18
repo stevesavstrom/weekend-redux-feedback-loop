@@ -2,7 +2,7 @@ import React from "react";
 import "./Review.css";
 import { useSelector } from "react-redux";
 import axios from "axios";
-import { HashRouter as Router, useHistory, } from "react-router-dom";
+import { HashRouter as Router, useHistory } from "react-router-dom";
 
 // Material-UI
 import { makeStyles } from "@material-ui/core/styles";
@@ -55,7 +55,29 @@ function Review() {
   return (
     <main>
       <section>
-        <h2>Feedback Summary</h2>
+      <h2>Feedback Summary</h2>
+      <div id="card">
+        <table>
+          <tr>
+            <td id="category">Feeling</td>
+            <td>{feelingData}</td>
+          </tr>
+          <tr>
+            <td id="category">Understanding</td>
+            <td>{understandingData}</td>
+          </tr>
+          <tr>
+            <td id="category">Support</td>
+            <td>{supportData}</td>
+          </tr>
+          <tr>
+            <td id="comment">Comment</td>
+            <td id= "commentData">{commentsData}</td>
+          </tr>
+        </table>
+        </div>
+
+        {/* <h2>Feedback Summary</h2>
         <h3>Feeling:</h3>
         <p>{feelingData}</p>
         <h3>Understanding:</h3>
@@ -63,7 +85,7 @@ function Review() {
         <h3>Support:</h3>
         <p>{supportData}</p>
         <h3>Comments:</h3>
-        <p> {commentsData}</p>
+        <p>{commentsData}</p> */}
         <Box className={classes.box}>
           <Button
             className={classes.button}

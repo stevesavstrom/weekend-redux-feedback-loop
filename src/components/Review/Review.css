@@ -1,16 +1,49 @@
 section {
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;
+	width: 60%;
 	height: 300px;
 	border-radius: 5px;
 	padding: 10px;
 }
 
-#comments {
+#comment {
+	width: 25%;
+	font-weight: 600;
 	text-align: left;
+	border-bottom: none;
 }
 
-p {
-	font-size: 22px;
+#commentData {
+	border-bottom: none;
 }
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 20px;
+  }
+  
+  td, th {
+	/* border: 2px solid #313639; */
+	border-bottom: 1px solid black;
+	/* border-top: 1px solid black; */
+	text-align: left;
+	padding: 8px;
+	border-radius: 8px;
+  }
+
+  #category {
+	  width: 25%;
+	  font-weight: 600;
+	  text-align: left;
+  }
+
+  #card {
+	  border: 2px solid #313639;
+	  padding: 5px;
+	  border-radius: 8px;
+	  background-color: #e9e9e9;
+  }
