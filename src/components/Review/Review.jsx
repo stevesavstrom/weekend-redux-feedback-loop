@@ -63,7 +63,7 @@ function Review() {
         <h3>Support:</h3>
         <p>{supportData}</p>
         <h3>Comments:</h3>
-        <p id="comments"> {commentsData}</p>
+        <p> {commentsData}</p>
         <Box className={classes.box}>
           <Button
             className={classes.button}

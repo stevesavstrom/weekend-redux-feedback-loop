@@ -12,7 +12,7 @@ Multi-step feedback/reflection form that allows users to provide numerical and t
 - Clean, logical user interface utilizing Material-UI components and styling.
 
 ## Screen Shot
-![Screen Shot](/public/images/screenshot.png)
+![Screen Shot](/public/images/screenshot.gif)
 
 ## Technologies Used and Prerequisites
 - [React](https://reactjs.org/)
@@ -25,12 +25,12 @@ Multi-step feedback/reflection form that allows users to provide numerical and t
 
 ## Installation
 1. Create a SQL database named `prime_feedback` (see database.sql for setup instructions.)
-2. Open your text editor and run `npm install`, `npm install redux react-redux`, `npm install redux-logger`, and  `npm install react-router-dom` in your terminal.
+2. Open your text editor and run `npm install`, `npm install redux react-redux`, `npm install redux-logger`, and  `npm install react-router-dom` in Terminal.
 3. Run `npm run server` in Terminal.
 4. Run `npm run client` in another Terminal to view React application.
 
 ## Usage
-Provide daily feedback for a learning experience by rating different categories and providing written comments. Your feedback is important and will be kep safe in the database. Feedback form 
+Provide daily feedback for a learning experience by rating different categories and providing written comments. Your feedback is important and will be kep safe in the database. Modeled after Prime Digital Academy's daily feedback form.
 
 ## Project Requirements
 - [x] Front end experience that allows users to leave feedback.
@@ -68,7 +68,3 @@ Provide daily feedback for a learning experience by rating different categories 
 - [] clean up code and formatting - remove unnecessary imports, etc.
 - [] complete READM for submission with description, functionality, process, screenshot, etc.
 - [] Final functionality test before submitting (UX, routing, DB, etc.)
-
-## Notes
-- POST axios should be on review component - that is where user submits and POSTS to database (could also be on App.jsx).
-- GET axios should be on Admin component (could also be on App.jsx).
