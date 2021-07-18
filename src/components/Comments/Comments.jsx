@@ -1,29 +1,16 @@
-import axios from "axios";
+import React from "react";
+import "./Comments.css";
+import { HashRouter as Router, useHistory, } from "react-router-dom";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 
-import React from "react";
-
 // Material-UI
 import { makeStyles } from "@material-ui/core/styles";
-import { spacing } from "@material-ui/system";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import Box from "@material-ui/core/Box";
-import Radio from "@material-ui/core/Radio";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import FormControl from "@material-ui/core/FormControl";
-import FormLabel from "@material-ui/core/FormLabel";
 
-import {
-  HashRouter as Router,
-  Route,
-  Link,
-  useHistory,
-} from "react-router-dom";
-import "./Comments.css";
-
+// Material-UI Styles
 const useStyles = makeStyles({
   button: {
     width: "250px",
@@ -41,7 +28,6 @@ function Comments() {
   const history = useHistory();
   const dispatch = useDispatch();
   const [commentsInput, setCommentsInput] = useState("");
-
   const classes = useStyles();
 
   const handleChange = (event) => {
@@ -59,6 +45,7 @@ function Comments() {
   };
 
   return (
+    <main>
     <section>
       <h2>Any comments you want to leave?</h2>
       <form onSubmit={handleSubmit} className="add-comments-form">
@@ -85,6 +72,7 @@ function Comments() {
         </Box>
       </form>
     </section>
+    </main>
   );
 }
 

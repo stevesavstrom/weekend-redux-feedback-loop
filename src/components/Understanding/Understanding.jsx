@@ -1,36 +1,23 @@
-import axios from "axios";
+import React from "react";
+import "./Understanding.css";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
+import { HashRouter as Router, useHistory, } from "react-router-dom";
 
 // Material-UI
 import { makeStyles } from "@material-ui/core/styles";
-import { spacing } from "@material-ui/system";
-import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import Box from "@material-ui/core/Box";
 import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
-import FormLabel from "@material-ui/core/FormLabel";
 
-import {
-  HashRouter as Router,
-  Route,
-  Link,
-  useHistory,
-} from "react-router-dom";
-import "./Understanding.css";
-
+// Material-UI Styles
 const useStyles = makeStyles({
   button: {
     width: "250px",
     padding: "10px",
-  },
-  input: {
-    width: "300px",
-    margin: "3px",
   },
   box: {
     margin: "30px",
@@ -59,6 +46,7 @@ function Understanding() {
   };
 
   return (
+    <main>
     <section>
       <h2>How well are you understanding the content?</h2>
       <form onSubmit={handleSubmit} className="add-book-form">
@@ -98,13 +86,6 @@ function Understanding() {
           </RadioGroup>
         </FormControl>
 
-        {/* <input
-          required
-          placeholder="Understanding"
-          value={understandingInput}
-          onChange={(event) => setUnderstandingInput(event.target.value)}
-        /> */}
-
         <Box className={classes.box}>
           <Button
             className={classes.button}
@@ -117,6 +98,7 @@ function Understanding() {
         </Box>
       </form>
     </section>
+    </main>
   );
 }
 

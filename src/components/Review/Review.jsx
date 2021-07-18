@@ -1,15 +1,15 @@
+import React from "react";
 import "./Review.css";
 import { useSelector } from "react-redux";
 import axios from "axios";
-import { HashRouter as Router, Route, Link, useHistory } from "react-router-dom";
-
-import React from "react";
+import { HashRouter as Router, useHistory, } from "react-router-dom";
 
 // Material-UI
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import Box from "@material-ui/core/Box";
 
+// Material-UI Styles
 const useStyles = makeStyles({
   button: {
     width: "250px",
@@ -51,24 +51,20 @@ function Review() {
       .catch((err) => {
         console.log("this is a Post error on Review.jsx", err);
       });
-
-      
   };
   return (
-    <>
+    <main>
       <section>
-        <p>Feeling:</p>
+        <h2>Feedback Summary</h2>
+        <h3>Feeling:</h3>
         <p>{feelingData}</p>
-        <p>Understanding:</p>
+        <h3>Understanding:</h3>
         <p>{understandingData}</p>
-        <p>Support:</p>
+        <h3>Support:</h3>
         <p>{supportData}</p>
-        <p>Comments:</p>
+        <h3>Comments:</h3>
         <p id="comments"> {commentsData}</p>
-      </section>
-
-      <section>
-      <Box className={classes.box}>
+        <Box className={classes.box}>
           <Button
             className={classes.button}
             variant="outlined"
@@ -76,11 +72,11 @@ function Review() {
             type="submit"
             onClick={() => handleSubmit()}
           >
-            Next
+            Submit
           </Button>
         </Box>
       </section>
-    </>
+    </main>
   );
 }
 
