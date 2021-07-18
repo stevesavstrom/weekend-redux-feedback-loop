@@ -45,6 +45,10 @@ Students can provide daily feedback for a learning experience by rating differen
 - [x] Users can then click the button to take a new survey which needs to reset all data and go back to the first step.
 
 ## Stretch Goals
+- [ ] Allow the user to go back to a previous step and change their score.
+- [x] Improve the styling of the app using Material-UI
+- [ ] Admin section: display all of the existing feedback at the route `/admin`. Most recent feedback should appear at top of list. Allow user to delete existing feedback. Prompt user to confirm prior to deleting the feedback from database.
+- [ ] Deploy project to Heroku
 
 ## TO DO
 - [x] npm install
@@ -65,6 +69,6 @@ Students can provide daily feedback for a learning experience by rating differen
 - [x] Review text for each component
 - [x] style header/overall look/colors
 - [x] style components with material-ui (inputs, buttons, etc.)
-- [] clean up code and formatting - remove unnecessary imports, etc.
-- [] complete READM for submission with description, functionality, process, screenshot, etc.
-- [] Final functionality test before submitting (UX, routing, DB, etc.)
+- [x] clean up code and formatting - remove unnecessary imports, etc.
+- [x] complete README for submission with description, functionality, process, screenshot, etc.
+- [x] Final functionality test before submitting (UX, routing, DB, etc.)
