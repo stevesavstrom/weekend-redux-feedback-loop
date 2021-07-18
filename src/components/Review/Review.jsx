@@ -3,12 +3,34 @@ import { useSelector } from "react-redux";
 import axios from "axios";
 import { HashRouter as Router, Route, Link, useHistory } from "react-router-dom";
 
+import React from "react";
+
+// Material-UI
+import { makeStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
+import Box from "@material-ui/core/Box";
+
+const useStyles = makeStyles({
+  button: {
+    width: "250px",
+    padding: "10px",
+  },
+  text: {
+    width: "600px",
+  },
+  box: {
+    margin: "30px",
+  },
+});
+
 function Review() {
   const history = useHistory();
   const feelingData = useSelector((store) => store.feelingData);
   const understandingData = useSelector((store) => store.understandingData);
   const supportData = useSelector((store) => store.supportData);
   const commentsData = useSelector((store) => store.commentsData);
+
+  const classes = useStyles();
 
   const handleSubmit = () => {
     event.preventDefault();
@@ -35,29 +57,28 @@ function Review() {
   return (
     <>
       <section>
-        <table>
-          <thead>
-            <tr>
-              <th>Feeling</th>
-              <th>Understanding</th>
-              <th>Support</th>
-              <th>Comments</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>{feelingData}</td>
-              <td>{understandingData}</td>
-              <td>{supportData}</td>
-              <td>{commentsData}</td>
-            </tr>
-          </tbody>
-        </table>
+        <p>Feeling:</p>
+        <p>{feelingData}</p>
+        <p>Understanding:</p>
+        <p>{understandingData}</p>
+        <p>Support:</p>
+        <p>{supportData}</p>
+        <p>Comments:</p>
+        <p id="comments"> {commentsData}</p>
       </section>
+
       <section>
-        <button type="submit" value="submit" onClick={() => handleSubmit()}>
-          Submit Feedback
-        </button>
+      <Box className={classes.box}>
+          <Button
+            className={classes.button}
+            variant="outlined"
+            color="primary"
+            type="submit"
+            onClick={() => handleSubmit()}
+          >
+            Next
+          </Button>
+        </Box>
       </section>
     </>
   );
