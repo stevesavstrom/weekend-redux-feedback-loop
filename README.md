@@ -24,13 +24,13 @@ Multi-step feedback/reflection form that allows users to provide numerical and t
 - [Material-UI](https://material-ui.com/)
 
 ## Installation
-1. Create a SQL database named `prime_feedback` (see database.sql for setup instructions.)
+1. Create a SQL database named `prime_feedback` (see `database.sql` for setup instructions.)
 2. Open your text editor and run `npm install`, `npm install redux react-redux`, `npm install redux-logger`, and  `npm install react-router-dom` in Terminal.
 3. Run `npm run server` in Terminal.
 4. Run `npm run client` in another Terminal to view React application.
 
 ## Usage
-Provide daily feedback for a learning experience by rating different categories and providing written comments. Your feedback is important and will be kep safe in the database. Modeled after Prime Digital Academy's daily feedback form.
+Students can provide daily feedback for a learning experience by rating different categories and providing written comments. Your feedback is important and will be kep safe in the database. Modeled after Prime Digital Academy's daily feedback form.
 
 ## Project Requirements
 - [x] Front end experience that allows users to leave feedback.

@@ -12,9 +12,12 @@ function App() {
 
   return (
     <div className='App'>
+  
       <header className='App-header'>
-        <h1 className='App-title'>Daily Feedback</h1>
+        <img src="images/logo2.png" width="300"></img>
+        {/* <h1 className='App-title'>Daily Feedback</h1> */}
       </header>
+    
       <Router>
 
       <Route path="/" exact>

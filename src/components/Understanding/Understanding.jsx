@@ -49,11 +49,11 @@ function Understanding() {
     <main>
     <section>
       <h2>How well are you understanding the content?</h2>
-      <form onSubmit={handleSubmit} className="add-book-form">
+      <form onSubmit={handleSubmit} className="add-understanding-form">
         <FormControl component="fieldset" required>
           <RadioGroup
-            aria-label="gender"
-            name="gender1"
+            aria-label="understanding"
+            name="understanding"
             value={understandingInput}
             onChange={handleChange}
             row

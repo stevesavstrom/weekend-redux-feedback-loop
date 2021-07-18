@@ -52,8 +52,8 @@ function Support() {
         <form onSubmit={handleSubmit} className="add-support-form">
           <FormControl component="fieldset" required>
             <RadioGroup
-              aria-label="gender"
-              name="gender1"
+              aria-label="support"
+              name="support"
               value={supportInput}
               onChange={handleChange}
               row
