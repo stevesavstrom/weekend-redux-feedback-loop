@@ -56,32 +56,31 @@ function Support() {
               name="support"
               value={supportInput}
               onChange={handleChange}
-              row
             >
               <FormControlLabel
-                value="1"
+                value="5"
                 control={<Radio required={true} />}
-                label="1"
-              />
-              <FormControlLabel
-                value="2"
-                control={<Radio required={true} />}
-                label="2"
-              />
-              <FormControlLabel
-                value="3"
-                control={<Radio required={true} />}
-                label="3"
+                label="5: Awesome support"
               />
               <FormControlLabel
                 value="4"
                 control={<Radio required={true} />}
-                label="4"
+                label="4: Good support"
               />
               <FormControlLabel
-                value="5"
+                value="3"
                 control={<Radio required={true} />}
-                label="5"
+                label="3: Some support"
+              />
+              <FormControlLabel
+                value="2"
+                control={<Radio required={true} />}
+                label="2: Need more support"
+              />
+              <FormControlLabel
+                value="1"
+                control={<Radio required={true} />}
+                label="1: No support at all"
               />
             </RadioGroup>
           </FormControl>

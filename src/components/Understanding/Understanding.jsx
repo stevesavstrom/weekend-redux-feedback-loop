@@ -2,7 +2,7 @@ import React from "react";
 import "./Understanding.css";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { HashRouter as Router, useHistory, } from "react-router-dom";
+import { HashRouter as Router, useHistory } from "react-router-dom";
 
 // Material-UI
 import { makeStyles } from "@material-ui/core/styles";
@@ -47,58 +47,57 @@ function Understanding() {
 
   return (
     <main>
-    <section>
-      <h2>How well are you understanding the content?</h2>
-      <form onSubmit={handleSubmit} className="add-understanding-form">
-        <FormControl component="fieldset" required>
-          <RadioGroup
-            aria-label="understanding"
-            name="understanding"
-            value={understandingInput}
-            onChange={handleChange}
-            row
-          >
-            <FormControlLabel
-              value="1"
-              control={<Radio required={true} />}
-              label="1"
-            />
-            <FormControlLabel
-              value="2"
-              control={<Radio required={true} />}
-              label="2"
-            />
-            <FormControlLabel
-              value="3"
-              control={<Radio required={true} />}
-              label="3"
-            />
-            <FormControlLabel
-              value="4"
-              control={<Radio required={true} />}
-              label="4"
-            />
-            <FormControlLabel
-              value="5"
-              control={<Radio required={true} />}
-              label="5"
-            />
-          </RadioGroup>
-        </FormControl>
+      <section>
+        <h2>How well are you understanding the content?</h2>
+        <form onSubmit={handleSubmit} className="add-understanding-form">
+          <FormControl component="fieldset" required>
+            <RadioGroup
+              aria-label="understanding"
+              name="understanding"
+              value={understandingInput}
+              onChange={handleChange}
+            >
+              <FormControlLabel
+                value="5"
+                control={<Radio required={true} />}
+                label="5: I'm mastering it."
+              />
+              <FormControlLabel
+                value="4"
+                control={<Radio required={true} />}
+                label="4: I'm getting the hang of it."
+              />
+              <FormControlLabel
+                value="3"
+                control={<Radio required={true} />}
+                label="3: I'm making some progress."
+              />
+              <FormControlLabel
+                value="2"
+                control={<Radio required={true} />}
+                label="2: I need help."
+              />
+              <FormControlLabel
+                value="1"
+                control={<Radio required={true} />}
+                label="1: I'm completely lost."
+              />
+            </RadioGroup>
+          </FormControl>
 
-        <Box className={classes.box}>
-          <Button
-            className={classes.button}
-            variant="outlined"
-            color="primary"
-            type="submit"
-          >
-            Next
-          </Button>
-        </Box>
-        <p id="question">Question 2 of 4</p>
-      </form>
-    </section>
+          <Box className={classes.box}>
+            <Button
+              className={classes.button}
+              variant="outlined"
+              color="primary"
+              type="submit"
+            >
+              Next
+            </Button>
+          </Box>
+          <p id="question">Question 2 of 4</p>
+        </form>
+      </section>
     </main>
   );
 }
