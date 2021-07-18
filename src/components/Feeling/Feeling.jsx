@@ -22,7 +22,7 @@ const useStyles = makeStyles({
   },
   box: {
     margin: "30px",
-  }
+  },
 });
 
 function Feeling() {
@@ -92,6 +92,7 @@ function Feeling() {
               Next
             </Button>
           </Box>
+          <p id="question">Question 1 of 4</p>
         </form>
       </section>
     </main>

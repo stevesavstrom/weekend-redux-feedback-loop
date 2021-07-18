@@ -70,6 +70,7 @@ function Comments() {
             Next
           </Button>
         </Box>
+        <p id="question">Question 4 of 4</p>
       </form>
     </section>
     </main>

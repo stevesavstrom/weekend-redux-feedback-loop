@@ -1,4 +1,11 @@
 main {
+	color: #313639;
 	background-color: #f8f8ff;
 	padding-bottom: 30%;
 }
+
+#question {
+	color: #b6b6b6;
+	font-size: 18px;
+}
+

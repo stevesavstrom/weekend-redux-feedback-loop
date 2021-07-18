@@ -96,6 +96,7 @@ function Support() {
               Next
             </Button>
           </Box>
+          <p id="question">Question 3 of 4</p>
         </form>
       </section>
     </main>
