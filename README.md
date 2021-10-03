@@ -11,6 +11,9 @@ Multi-step feedback/reflection form that allows users to provide numerical and t
 - Feedback data is captured in database.
 - Clean, logical user interface utilizing Material-UI components and styling.
 
+## Deployment
+This application is deployed on Heroku: [Try it out!](https://afternoon-woodland-11061.herokuapp.com/#/)
+
 ## Screen Shot
 ![Screen Shot](/public/images/screenshot.gif)
 
