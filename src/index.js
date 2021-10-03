@@ -39,7 +39,7 @@ const supportData = (state = [], action) => {
 const storeInstance = createStore(
   combineReducers({
     //  Reducers go here
-    feelingData,
+  feelingData,
 	understandingData,
 	supportData,
 	commentsData

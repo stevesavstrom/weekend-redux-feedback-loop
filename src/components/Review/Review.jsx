@@ -76,16 +76,6 @@ function Review() {
           </tr>
         </table>
         </div>
-
-        {/* <h2>Feedback Summary</h2>
-        <h3>Feeling:</h3>
-        <p>{feelingData}</p>
-        <h3>Understanding:</h3>
-        <p>{understandingData}</p>
-        <h3>Support:</h3>
-        <p>{supportData}</p>
-        <h3>Comments:</h3>
-        <p>{commentsData}</p> */}
         <Box className={classes.box}>
           <Button
             className={classes.button}
